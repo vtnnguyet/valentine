@@ -1,11 +1,11 @@
-const yesBtn = document.getElementById('yesBtn');
-const noBtn = document.getElementById('noBtn');
-const fireworks = document.getElementById('fireworks');
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const fireworks = document.getElementById("fireworks");
 
-let yesSize=20;
+let yesSize = 20;
 
-noBtn.Btn.addEventListener("click", () => {
-    yesSize +=10;
+noBtn.addEventListener("click", () => {
+    yesSize += 10;
     yesBtn.style.fontSize = yesSize + "px";
 });
 
