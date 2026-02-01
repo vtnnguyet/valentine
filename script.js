@@ -21,17 +21,27 @@ noBtn.addEventListener('click', () => {
         gif.src ='';
         gif.src = 'valentine.gif';
         noBtn.textContent = "You sure?";
-        yesSize += 8;
+        yesSize += 10;
         yesBtn.style.fontSize = yesSize + "px";
     } else if (noClicks === 2) {
         noBtn.textContent = "Really sure?";
         yesSize += 8;
         gif.src = 'valentine.gif';
         yesBtn.style.fontSize = yesSize + "px";
-    } else {
+    } else if (noClicks ===3) {
         yesSize += 8;
         noBtn.textContent ="Try again :(";
         gif.src = 'valentine.gif';
+        yesBtn.style.fontSize = yesSize + "px";
+    } else if (noClicks === 4) {
+        yesSize +=10;
+        noBtn.textContent ="I'm gonna be sad :(";
+        gif.src ='valentine.gif';
+        yesBtn.style.fontSize = yesSize + "px";
+    } else {
+        yesSize +=14;
+        noBtn.textContent ="Last chance";
+        gif.src ='valentine.gif';
         yesBtn.style.fontSize = yesSize + "px";
     }
 });
