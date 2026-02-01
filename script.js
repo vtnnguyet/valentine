@@ -16,17 +16,20 @@ yesBtn.addEventListener('click', () => {
 noBtn.addEventListener('click', () => {
     noClicks++;
     if (noClicks === 1) {
-        gif.src = 'valentine.gif' + new Date().getTime();
+        gif.src ='';
+        gif.src = 'valentine.gif';
         noBtn.textContent = "You sure?";
         yesSize += 5;
         yesBtn.style.fontSize = yesSize + "px";
     } else if (noClicks === 2) {
         noBtn.textContent = "Really sure?";
         yesSize += 5;
+        gif.src = 'valentine.gif';
         yesBtn.style.fontSize = yesSize + "px";
     } else {
         yesSize += 5;
         noBtn.textContent ="Try again :(";
+        gif.src = 'valentine.gif';
         yesBtn.style.fontSize = yesSize + "px";
     }
 });
