@@ -1,54 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #b36060;
-    background: linear-gradient(135deg, #b36060, #df83db);
     text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 60px;
+    background-color: #ecbfc9 ;
 }
 
-h1 {
-    color: #fff;
-    margin-bottom: 20px;
-}
-
+/* GIFs */
 #questionGif,
 #fireworks {
     width: 300px;
-    height: auto;
-    margin: 15px auto;
-    border-radius: 16px;
+    margin: 20px auto;
+    display: block;
 }
 
+/* Fireworks hidden at start */
 #fireworks {
     display: none;
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
+/* Buttons */
 button {
-    font-size: 22px;
-    padding: 12px 28 px;
+    font-size: 20px;
+    padding: 10px 20px;
     margin: 10px;
-    border:none;
-    border-radius: 30px;
-    cursor:pointer;
-    transition: all 0.3s ease;
-}
-
-#yesBtn {
-    background-color: #edf2ed;
-    color: rgb(28, 207, 0);
-}
-
-#noBtn {
-    background-color: #ff0000;
-    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
