@@ -16,7 +16,7 @@ yesBtn.addEventListener('click', () => {
 noBtn.addEventListener('click', () => {
     noClicks++;
     if (noClicks === 1) {
-        gif.src = 'questionGif.gif'; // optionally keep same or show "You sure?" as a new GIF
+        gif.src = 'valentine.gif'; // optionally keep same or show "You sure?" as a new GIF
         noBtn.textContent = "You sure?";
         yesSize += 5;
         yesBtn.style.fontSize = yesSize + "px";
