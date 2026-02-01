@@ -10,6 +10,8 @@ yesBtn.addEventListener('click', () => {
     gif.src = 'fireworks.gif'; // show fireworks gif
     yesBtn.style.display = 'none';
     noBtn.style.display = 'none';
+
+    questionText.textContent ="Hoorayyyy!!!";
     
 });
 
@@ -19,15 +21,15 @@ noBtn.addEventListener('click', () => {
         gif.src ='';
         gif.src = 'valentine.gif';
         noBtn.textContent = "You sure?";
-        yesSize += 5;
+        yesSize += 8;
         yesBtn.style.fontSize = yesSize + "px";
     } else if (noClicks === 2) {
         noBtn.textContent = "Really sure?";
-        yesSize += 5;
+        yesSize += 8;
         gif.src = 'valentine.gif';
         yesBtn.style.fontSize = yesSize + "px";
     } else {
-        yesSize += 5;
+        yesSize += 8;
         noBtn.textContent ="Try again :(";
         gif.src = 'valentine.gif';
         yesBtn.style.fontSize = yesSize + "px";
